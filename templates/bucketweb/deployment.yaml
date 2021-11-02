@@ -46,7 +46,7 @@ spec:
       {{- end }}
       containers:
         - name: bucketweb
-          image: {{ include "thanos.image" . }}
+          image: {{ .Values.image.repository | quote }}
           imagePullPolicy: {{ .Values.image.pullPolicy | quote }}
           args:
             - tools

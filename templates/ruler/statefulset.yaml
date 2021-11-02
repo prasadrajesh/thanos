@@ -65,7 +65,7 @@ spec:
       {{- end }}
       containers:
         - name: ruler
-          image: {{ include "thanos.image" . }}
+          image: {{ .Values.image.repository | quote }}
           imagePullPolicy: {{ .Values.image.pullPolicy | quote }}
           {{- if .Values.ruler.securityContext.enabled }}
           securityContext:
