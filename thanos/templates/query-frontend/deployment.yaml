@@ -47,7 +47,7 @@ spec:
       {{- end }}
       containers:
         - name: query-frontend
-          image: {{ .Values.image.repository | quote }}
+          image: {{ include "thanos.image" . }}
           imagePullPolicy: {{ .Values.image.pullPolicy | quote }}
           args:
             - query-frontend

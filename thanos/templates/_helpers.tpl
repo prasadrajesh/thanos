@@ -78,10 +78,10 @@ Also, we can't use a single if because lazy evaluation is not an option
     {{- if .Values.global.imageRegistry }}
         {{- printf "%s/%s:%s" .Values.global.imageRegistry $repositoryName $tag -}}
     {{- else -}}
-        {{- printf "%s/%s:%s" $registryName $repositoryName $tag -}}
+        {{- printf "%s:%s"  $repositoryName $tag -}}
     {{- end -}}
 {{- else -}}
-    {{- printf "%s/%s:%s" $registryName $repositoryName $tag -}}
+    {{- printf "%s:%s" $repositoryName $tag -}}
 {{- end -}}
 {{- end -}}
 

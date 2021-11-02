@@ -62,7 +62,7 @@ spec:
       {{- end }}
       containers:
         - name: compactor
-          image: {{ .Values.image.repository | quote }}
+          image: {{ include "thanos.image" . }}
           imagePullPolicy: {{ .Values.image.pullPolicy | quote }}
           {{- if .Values.compactor.securityContext.enabled }}
           securityContext:

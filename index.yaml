@@ -5,11 +5,11 @@ entries:
       category: Analytics
     apiVersion: v1
     appVersion: 0.15.0
-    created: "2021-11-02T10:52:23.130350111Z"
+    created: "2021-11-02T11:26:20.889940856Z"
     description: Thanos is a highly available metrics system that can be added on
       top of existing Prometheus deployments, providing a global query view across
       all Prometheus installations.
-    digest: 151ec3a5b45347be412ce05418e23d744a3327dbf1d86041e7da37da86b76e2b
+    digest: a6587c2177b1be118d75da5214467967639736860636648acf95ea973de39c06
     home: https://github.com/bitnami/charts/tree/master/bitnami/thanos
     icon: https://bitnami.com/assets/stacks/thanos/img/thanos-stack-220x234.png
     keywords:
@@ -27,4 +27,4 @@ entries:
     urls:
     - thanos-2.5.0.tgz
     version: 2.5.0
-generated: "2021-11-02T10:52:23.123974162Z"
+generated: "2021-11-02T11:26:20.884206911Z"

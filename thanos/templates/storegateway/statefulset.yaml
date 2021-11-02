@@ -64,7 +64,7 @@ spec:
       {{- end }}
       containers:
         - name: storegateway
-          image: {{ .Values.image.repository | quote }}
+          image: {{ include "thanos.image" . }}
           imagePullPolicy: {{ .Values.image.pullPolicy | quote }}
           {{- if .Values.storegateway.securityContext.enabled }}
           securityContext:
