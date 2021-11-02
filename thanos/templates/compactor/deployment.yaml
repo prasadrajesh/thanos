@@ -77,7 +77,7 @@ spec:
             - --retention.resolution-5m={{ .Values.compactor.retentionResolution5m }}
             - --retention.resolution-1h={{ .Values.compactor.retentionResolution1h }}
             - --consistency-delay={{ .Values.compactor.consistencyDelay }}
-            - --objstore.config-file=/conf/objstore.yml
+            - --objstore.config-file=/conf/thanos.yaml
             {{- range .Values.compactor.extraFlags }}
             - {{ . }}
             {{- end }}

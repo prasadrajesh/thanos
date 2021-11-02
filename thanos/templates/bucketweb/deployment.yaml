@@ -54,7 +54,7 @@ spec:
             - web
             - --http-address=0.0.0.0:8080
             - --log.level={{ .Values.bucketweb.logLevel }}
-            - --objstore.config-file=/conf/objstore.yml
+            - --objstore.config-file=/conf/thanos.yaml
             {{- if .Values.bucketweb.refresh }}
             - --refresh={{ .Values.bucketweb.refresh }}
             {{- end }}

@@ -87,7 +87,7 @@ spec:
             - --label=replica="$(POD_NAME)"
             - --label=ruler_cluster="{{ .Values.ruler.clusterName }}"
             - --alert.label-drop=replica
-            - --objstore.config-file=/conf/objstore/objstore.yml
+            - --objstore.config-file=/conf/objstore/thanos.yaml
             - --rule-file=/conf/rules/ruler.yml
             {{- range .Values.ruler.queries }}
             - --query={{ . }}

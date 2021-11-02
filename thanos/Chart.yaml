@@ -20,4 +20,4 @@ name: thanos
 sources:
 - https://github.com/bitnami/bitnami-docker-thanos
 - https://thanos.io
-version: 2.5.1
+version: 2.5.2
